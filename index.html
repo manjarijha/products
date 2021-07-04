@@ -6,15 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>products</title>
     <link rel="stylesheet" href="style.css">
-       <!--<script src="https://kit.fontawesome.com/9221aff666.js" crossorigin="anonymous"></script>-->
-    <script src="script.js" > </script>
+<script src="https://kit.fontawesome.com/9221aff666.js" crossorigin="anonymous"></script>
+    
       
 </head>
 <body>
 
     <div class="products">
         <div class="container">
+            <!--CART BODY STARTED FROM HERE -->
+            <div class="callout"> 
+                <div class="nav">
+                    <ul class="nav-list-ul">
+                        <li><a href=""> Product  </a></li> 
+                        <li><a href="">Product Name </a></li>
+                        <li class="nav-price"><a href="">Price </a></li>
+                    </ul>
+                    <!--ITEM 1 CALLOUT STARTED-->
+                    <div class="item1">
+                        <ul>
+                       <div class="cart-image"> <img src="shoe-1.png" > </div>
+                            <li> <a href="#"> Nike shoes DX233 </a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                            <li class="price"> <a href=" #">$133</a></li>
+                       <button> <span><i class="fas fa-trash-alt"></i></span></button>  
+                    </ul>
+                    </div>
+                    <!--ITEM 1 CALLOUT ENDED-->
+                    <!--ITEM 2 CALLOUT STARTED-->
+                    <div class="item1">
+                    <ul>
+                    <div class="cart-image"> <img src="shoe-2.png" > </div>
+                    <li> <a href="#">Sports shoes ZX233 </a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <li class="price"> <a href=" #">$110</a></li>
+                    <button> <span><i class="fas fa-trash" id="delete"></i></span></button>  
+                    </ul>
+                    </div>
+                    <!--ITEM 2 CALLOUT ENDED-->
+
+                    <!--ITEM 3 CALLOUT STARTED-->
+                    <div class="item1">
+                    <ul>
+                    <div class="cart-image"> <img src="shoe-3.png" > </div>
+                   <li> <a href="#">Unisex shoes CK29 </a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                  <li class="price"> <a href=" #">$133</a></li>
+                <button> <span><i class="fas fa-trash" id="delete"></i></span></ul>button>  
+                    </ul>
+                    </div>
+                   <!--ITEM 3 CALLOUT ENDED-->
+
+                   <!--ITEM 4 CALLOUT STARTED-->
+                    <div class="item1">
+                    <ul>
+                    <div class="cart-image"> <img src="shoe-4.png" > </div>
+                    <li> <a href="#"> MAX Shoes DX233 </a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <li class="price"> <a href=" #">$195</a></li>
+                   <button> <span><i class="fas fa-trash" id="delete"></i></span></ul>button>  
+                    </ul>
+                    </div>
+                    <!--ITEM 4 CALLOUT ENDED-->
+
+                    <!--ITEM 5 CALLOUT STARTED-->
+                    <div class="item1">
+                    <ul>
+                    <div class="cart-image"> <img src="shoe-5.png" style="width:200px ;height: 160px;"> </div>
+                    <li> <a href="#"> Nike Sports N191 </a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <li class="price"> <a href=" #">$159</a></li>
+                    <button> <span><i class="fas fa-trash" id="delete"></i></span></ul></button>
+                    </ul>
+                    </div>
+                    <!--ITEM 5 CALLOUT ENDED-->
+
+                    <!--ITEM 6 CALLOUT STARTED-->
+                    <div class="item1">
+                    <ul>
+                    <div class="cart-image"> <img src="shoe-6.png" > </div>
+                    <li> <a href="#"> Cat Walk CW43 </a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <li class="price"> <a href=" #">$159</a></li>
+                    <button> <span><i class="fas fa-trash" id="delete"></i></span></ul>button>  
+                    </ul>
+                    </div>
+                    <!--ITEM 6 CALLOUT ENDED-->
+
+                    <!--ITEM 7 CALLOUT STARTED-->
+                    <div class="item1">
+                    <ul>
+                    <div class="cart-image"> <img src="shoe-7.png" > </div>
+                    <li> <a href="#"> Calvin Klien DX233 </a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <li class="price"> <a href=" #">$183</a></li>
+                    <button> <span><i class="fas fa-trash" id="delete"></i></span></ul>button>  
+                    </ul>
+                    </div>
+                    <!--ITEM 7 CALLOUT ENDED-->
+
+
+                    <!--ITEM 8 CALLOUT STARTED-->
+                    <div class="item1">
+                        <ul>
+                        <div class="cart-image"> <img src="shoe-8.png" > </div>
+                        <li> <a href="#"> MOCHI  DX233 </a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                        <li class="price"> <a href=" #">$235</a></li>
+                        <button> <span><i class="fas fa-trash" id="delete"></i></span></ul>button>  
+                        </ul>
+                        </div>
+                        <!--ITEM 7 CALLOUT ENDED-->
+                </div>
+            </div>
+               <!--CART BODY ENDED HERE -->
             <h1  class="lg-title" >special shoes at offer</h1>
+                <button type="button" class="btn-buy" id="top-cart"  onclick="$('.container .callout').toggleClass('open');">  Cart
+                    <span> <i class="fas fa-shopping-cart"> <sup id="counter">0</sup></i> </span> 
+                </button>
             <p class="text-light" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores consequuntur itaque, tenetur iste quia quae ex. Ipsum temporibus laudantium nesciunt dolorem blanditiis voluptate</p>
 <div class="product-items">
     <!--singlee product item-->
@@ -25,10 +126,10 @@
             </div>
 
             <div class="product-btns">
-                <button type="button" class="btn-cart ">add to cart
+                <button type="button" class="btn-cart " id="addToCart">add to cart
                     <span> <i class="fas fa-plus"></i> </span>
                 </button>
-                <button type="button" class="btn-buy">buy now
+                <button type="button" class="btn-buy" id="addToCart" >buy now
                     <span> <i class="fas fa-shopping-cart"></i> </span>
                 </button>
             </div>
@@ -62,7 +163,7 @@
             </div>
 
             <div class="product-btns">
-                <button type="button" class="btn-cart ">add to cart
+                <button type="button" class="btn-cart " id="addToCart" >add to cart
                     <span> <i class="fas fa-plus"></i> </span>
                 </button>
                 <button type="button" class="btn-buy">buy now
@@ -98,7 +199,7 @@
             </div>
 
             <div class="product-btns">
-                <button type="button" class="btn-cart ">add to cart
+                <button type="button" class="btn-cart " id="btn-cart">add to cart
                     <span> <i class="fas fa-plus"></i> </span>
                 </button>
                 <button type="button" class="btn-buy">buy now
@@ -267,7 +368,7 @@
                 <span> <i class="far fa-star" ></i>  </span>
                 </div>
             </div>
-            <a href="#" class="product-name">men shoes DX233,new product</a>
+            <a href="#" class="product-name">Women DX233,new product</a>
             <p class="product-price">$195.00</p>
             <p class="product-price">$183.00</p>
         </div>
@@ -303,7 +404,7 @@
                 <span> <i class="fas fa-star" ></i>  </span>
                 </div>
             </div>
-            <a href="#" class="product-name">men shoes DX233,new product</a>
+            <a href="#" class="product-name">Women DX233,new product</a>
             <p class="product-price">$255.00</p>
             <p class="product-price">$235.00</p>
         </div>
@@ -316,6 +417,8 @@
 </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
     
 </body>
 </html>
